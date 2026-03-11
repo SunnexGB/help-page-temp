@@ -1,7 +1,29 @@
+@font-face {
+    font-family: 'BABAPRO FONT';
+    src: url('https://files.catbox.moe/zq7fds.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src:url('https://files.catbox.moe/x42wbf.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    src: url('https://files.catbox.moe/1737gw.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -118,7 +140,7 @@ nav {
 }
 
 .hikka-title {
-    font-family: 'Pixelify Sans Regular', "Monocraft";
+    font-family: 'Pixelify Sans', "Monocraft";
     font-weight: 700;
     font-size: 3.333vw;
     line-height: 1.3;

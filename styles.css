@@ -1,15 +1,11 @@
 @font-face {
     font-family: 'BABAPRO FONT';
     src: url('Assets/fonts/BabaPro-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'Monocraft';
     src: url('Assets/fonts/Monocraft.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 :root {

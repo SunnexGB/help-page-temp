@@ -11,12 +11,12 @@ const vThumb = document.getElementById('volThumb');
 
 const ru = {
     'subtitle': 'Гайд по установке',
-    'note': 'Если у вас есть вопросы, обратитесь в <a class="note" href="https://t.me/heroku_talks" target="_blank">Поддержку</a>.',
+    'note': 'Если у вас есть вопросы, обратитесь в <a class="note" href="https://t.me/heroku_talks" target="_blank">поддержку</a>.',
     'video-header': 'Полное видео руководство',
     'steps-header': 'Пошаговое руководство',
     'step1-title': 'Установите UserLAnd',
     'step1-desc': 'Скачайте и установите UserLAnd из Google Play Store. Это приложение позволяет запускать Linux на вашем Android устройстве.',
-    'step1-link': 'Скачать из Google Play',
+    'step1-link': 'Скачать из Google Play ->',
     'step2-title': 'Установите Ubuntu',
     'step2-desc': 'Откройте UserLand, выберите Ubuntu → Minimal → Terminal. Это настроит лёгкое Ubuntu окружение на вашем устройстве.',
     'step3-title': 'Ожидайте установку',

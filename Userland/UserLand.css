@@ -32,6 +32,10 @@
     --screen-overlay-h: 22vw;
     --progress-h: 0.208vw;
     --thumb-size: 0.625vw;
+    --icon-ctrl: 1.1vw;
+    --icon-vol: 1.6vw;
+    --icon-chevron-w: 0.469vw;
+    --icon-chevron-h: 0.729vw;
 }
 
 *,
@@ -147,6 +151,8 @@ body {
     display: none;
     pointer-events: none;
     position: absolute;
+    width: 2vw;
+    height: auto;
 }
 
 .hint-play {
@@ -257,6 +263,17 @@ body {
 
 .pp-btn:hover {
     opacity: 1;
+}
+
+.pp-btn .icon {
+    width: var(--icon-ctrl);
+    height: var(--icon-ctrl);
+}
+
+.pp-btn .icon--vol,
+.pp-btn .icon--muted {
+    width: var(--icon-vol);
+    height: var(--icon-vol);
 }
 
 .progress-time {
@@ -427,6 +444,8 @@ body {
 
 .step-link svg {
     flex-shrink: 0;
+    width: 0.833vw;
+    height: auto;
 }
 
 .step-block--expandable {
@@ -459,8 +478,9 @@ body {
 }
 
 .expand-btn svg {
-    width: 0.469vw;
-    height: 0.729vw;
+    width: var(--icon-chevron-w);
+    height: var(--icon-chevron-h);
+    flex-shrink: 0;
 }
 
 .expand-chevron {
@@ -561,8 +581,7 @@ body {
     font-size: 0.625vw;
 }
 
-.terminal-bar svg,
-.expand-btn svg {
+.terminal-bar svg {
     width: 0.625vw;
     height: 0.625vw;
     flex-shrink: 0;
@@ -630,4 +649,231 @@ body {
     color: var(--code);
     word-break: break-all;
     user-select: text;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 14px 40px;
+        gap: 24px;
+    }
+
+    .guide-header {
+        gap: 6px;
+    }
+
+    .userland-logo {
+        width: 72px;
+        margin-bottom: 10px;
+    }
+
+    .host-title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .note {
+        font-size: 13px;
+    }
+
+    .video-header,
+    .steps-header {
+        font-size: 16px;
+    }
+
+    .steps-header {
+        margin-bottom: 16px;
+    }
+
+    .video {
+        padding: 12px;
+        max-width: 100%;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .video-player {
+        border-radius: 8px;
+    }
+
+    .screen-overlay {
+        height: 48vw;
+    }
+
+    .hint-icon {
+        width: 20px;
+    }
+
+    .overlay-controls {
+        padding: 10px 10px 8px;
+        gap: 6px;
+    }
+
+    .ov-progress-track {
+        height: 3px;
+    }
+
+    .ov-progress-track:hover {
+        height: 5px;
+    }
+
+    .progress-thumb {
+        width: 8px;
+        height: 8px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .pp-btn {
+        padding: 2px;
+    }
+
+    .pp-btn .icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .pp-btn .icon--vol,
+    .pp-btn .icon--muted {
+        width: 16px;
+        height: 16px;
+    }
+
+    .progress-time {
+        font-size: 9px;
+    }
+
+    .volume {
+        gap: 6px;
+    }
+
+    .volume-bar {
+        width: 52px;
+        height: 3px;
+    }
+
+    .volume-bar:hover {
+        height: 5px;
+    }
+
+    .vol-thumb {
+        width: 8px;
+        height: 8px;
+    }
+
+    .steps-block {
+        max-width: 100%;
+    }
+
+    .step {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .step-num {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .step-block {
+        gap: 8px;
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .step-block-title {
+        font-size: 14px;
+    }
+
+    .step-block-desc {
+        font-size: 12px;
+    }
+
+    .step-link {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .step-link svg {
+        width: 9px;
+    }
+
+    .expand-header {
+        gap: 8px;
+    }
+
+    .expand-btn svg {
+        width: 7px;
+        height: 11px;
+    }
+
+    .expand-inner {
+        gap: 10px;
+        margin-top: 6px;
+    }
+
+    .is-expanded .expand-body {
+        max-height: 600px;
+    }
+
+    .sub-step {
+        gap: 8px;
+        padding-bottom: 10px;
+    }
+
+    .sub-step-num {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+    }
+
+    .sub-step-title {
+        font-size: 11px;
+    }
+
+    .sub-step-list li {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+
+    .sub-example {
+        font-size: 9px;
+    }
+
+    .inline-code {
+        font-size: 11px;
+        padding: 1px 4px;
+        border-radius: 3px;
+    }
+
+    .terminal {
+        border-radius: 10px;
+    }
+
+    .terminal-bar {
+        padding: 6px 10px;
+    }
+
+    .terminal-bar svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .copy-btn svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .terminal-body {
+        padding: 10px 12px;
+    }
+
+    .terminal-code {
+        font-size: 10px;
+    }
 }

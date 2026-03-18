@@ -84,6 +84,14 @@ function toggleMute() {
     isMuted = !isMuted;
     video.muted = isMuted;
     player.classList.toggle('is-muted', isMuted);
+    
+    if (isMuted) {
+        vFill.style.width = '0%';
+        vThumb.style.left = '0%';
+    } else {
+        vFill.style.width = volume + '%';
+        vThumb.style.left = volume + '%';
+    }
 }
 
 function setVolume(e) {

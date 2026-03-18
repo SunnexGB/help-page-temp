@@ -8,19 +8,7 @@
 </head>
 <body>
     <header class="guide-header">
-        <svg class="userland-logo" width="143" height="143" viewBox="0 0 143 143" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M96.0275 53.7581C92.8755 53.7581 90.314 56.3346 90.314 59.5159C90.314 62.6969 92.8755 65.2754 96.0275 65.2754C99.1756 65.2754 101.738 62.6969 101.738 59.5159C101.738 56.3341 99.1759 53.7581 96.0275 53.7581Z"
-                fill="white" />
-            <path
-                d="M46.7161 53.7581C43.5642 53.7581 41.0026 56.3346 41.0026 59.5159C41.0026 62.6969 43.5642 65.2754 46.7161 65.2754C49.8642 65.2754 52.4263 62.6969 52.4263 59.5159C52.4263 56.3341 49.8645 53.7581 46.7161 53.7581Z"
-                fill="white" />
-            <path
-                d="M121.829 20.8074C108.35 7.38958 90.4294 0 71.37 0C52.3106 0 34.3903 7.38958 20.9114 20.8074C7.42638 34.2308 0 52.0798 0 71.0664V142.133H142.74V71.0664C142.74 52.0798 135.314 34.2308 121.829 20.8074ZM113.126 132.824H29.6138V61.4267C29.6138 50.1034 38.8777 40.8911 50.2646 40.8911C57.2103 40.8911 63.652 44.3378 67.4954 50.1112L71.37 55.9309L75.2443 50.1112C79.0877 44.3381 85.5294 40.8911 92.4752 40.8911C103.862 40.8911 113.126 50.1034 113.126 61.4267V132.824Z"
-                fill="white" />
-            <path d="M53.2448 87.1932L71.37 115.844L89.4952 87.1932L71.37 70.9671L53.2448 87.1932Z" fill="white" />
-        </svg>
+        <img class="userland-logo" src="../Assets/svg/Userland-logo-rarge.svg" alt="UserLand-logo">
         <h1 class="host-title">UserLand</h1>
         <p class="subtitle" language-data="subtitle">Installation guide</p>
         <p class="note" language-data="note">If you have any questions, please contact <a class="note" href="https://t.me/heroku_talks" target="_blank">support</a></p>
@@ -31,13 +19,8 @@
             <div class="video-screen" id="videoScreen" onclick="togglePlay()">
                 <video id="GuideVideo" src="../Assets/guide/madk1d.mp4"></video>
                 <div class="screen-overlay" id="screenOverlay">
-                    <svg class="hint-icon hint-play" width="20" height="24" viewBox="0 0 20 24" fill="none">
-                        <path d="M0 0L20 12L0 24V0Z" fill="white" />
-                    </svg>
-                    <svg class="hint-icon hint-pause" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                        <rect x="0" y="0" width="5" height="20" rx="2" fill="white" />
-                        <rect x="11" y="0" width="5" height="20" rx="2" fill="white" />
-                    </svg>
+                    <img class="hint-icon hint-play" src="../Assets/svg/hint-play.svg" alt="hint-play-icon">
+                    <img class="hint-icon hint-pause" src="../Assets/svg/hint-pause.svg" alt="hint-play-icon">
                 </div>
                 <div class="overlay-controls" id="overlayControls">
                     <div class="progress-bar">
@@ -48,29 +31,15 @@
                     </div>
                     <div class="buttons">
                         <button class="pp-btn" onclick="togglePlay(); event.stopPropagation();" title="Play / Pause">
-                            <svg class="icon icon--play" width="11" height="13" viewBox="0 0 11 13" fill="none">
-                                <path d="M0 0L11 6.5L0 13V0Z" fill="white" />
-                            </svg>
-                            <svg class="icon icon--pause" width="11" height="13" viewBox="0 0 11 13" fill="none">
-                                <rect x="0" y="0" width="3.5" height="13" rx="1.2" fill="white" />
-                                <rect x="7.5" y="0" width="3.5" height="13" rx="1.2" fill="white" />
-                            </svg>
+                            <img class="icon icon--play" src="../Assets/svg/hint-play.svg" alt="hint-play-icon">
+                            <img class="icon icon--pause" src="../Assets/svg/hint-pause.svg" alt="hint-play-icon">
                         </button>
                         <span class="progress-time" id="progressTime">0:00 / 0:00</span>
                         <div style="flex:1"></div>
                         <div class="volume" onclick="event.stopPropagation()">
-                            <button class="pp-btn" onclick="toggleMute()" title="mute">
-                                <svg class="icon icon--vol" width="16" height="13" viewBox="0 0 16 13" fill="none">
-                                    <path d="M0 4.5H3.5L8 0V13L3.5 8.5H0V4.5Z" fill="white" />
-                                    <path d="M10 3.5C10.9 4.4 11.5 5.15 11.5 6.5C11.5 7.85 10.9 8.6 10 9.5" stroke="white" stroke-width="1.3"
-                                        stroke-linecap="round" />
-                                    <path d="M12.3 1.5C13.9 3 14.8 4.65 14.8 6.5C14.8 8.35 13.9 10 12.3 11.5" stroke="white" stroke-width="1.3"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <svg class="icon icon--muted" width="16" height="13" viewBox="0 0 16 13" fill="none">
-                                    <path d="M0 4.5H3.5L8 0V13L3.5 8.5H0V4.5Z" fill="white" />
-                                    <path d="M11 4L14.5 9M14.5 4L11 9" stroke="white" stroke-width="1.4" stroke-linecap="round" />
-                                </svg>
+                            <button class="pp-btn" onclick="toggleMute()" title="mute / unmute">
+                                <img class="icon icon--vol" src="../Assets/svg/volume.svg" alt="volume-icon">
+                                <img class="icon icon--muted" src="../Assets/svg/mute.svg" alt="mute-icon">
                             </button>
                             <div class="volume-bar" id="volumeBar" onclick="setVolume(event)">
                                 <div class="vol-fill" id="volFill"></div>
@@ -124,22 +93,9 @@
                     <p class="step-block-desc" language-data="step4-desc">After successful installation, a terminal will open in front of you, write there:</p>
                     <div class="terminal">
                         <div class="terminal-bar">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <path
-                                    d="M8.07293 4.53869C7.80794 4.53869 7.5926 4.75622 7.5926 5.02481C7.5926 5.29338 7.80794 5.51108 8.07293 5.51108C8.33758 5.51108 8.55298 5.29338 8.55298 5.02481C8.55298 4.75618 8.33761 4.53869 8.07293 4.53869Z"
-                                    fill="white" />
-                                <path
-                                    d="M3.92738 4.53869C3.66239 4.53869 3.44705 4.75622 3.44705 5.02481C3.44705 5.29338 3.66239 5.51108 3.92738 5.51108C4.19203 5.51108 4.40742 5.29338 4.40742 5.02481C4.40742 4.75618 4.19206 4.53869 3.92738 4.53869Z"
-                                    fill="white" />
-                                <path
-                                    d="M10.242 1.75673C9.10884 0.623888 7.6023 0 6 0C4.3977 0 2.89116 0.623888 1.758 1.75673C0.624328 2.89004 0 4.39699 0 6V12H12V6C12 4.39699 11.3757 2.89004 10.242 1.75673ZM9.5104 11.2141H2.4896V5.18614C2.4896 4.23014 3.26841 3.45236 4.22569 3.45236C4.80961 3.45236 5.35116 3.74335 5.67427 4.23079L6 4.72214L6.32571 4.23079C6.64882 3.74338 7.19037 3.45236 7.77429 3.45236C8.73157 3.45236 9.51038 4.23014 9.51038 5.18614V11.2141H9.5104Z"
-                                    fill="white" />
-                                <path d="M4.47623 7.36156L6 9.78052L7.52376 7.36156L6 5.99162L4.47623 7.36156Z" fill="white" />
-                            </svg>
+                            <img class="terminal-icon" src="../Assets/svg/Userland-logo-rarge.svg" alt="userland-icon">
                             <button class="copy-btn" onclick="copyCode(this)" title="Copy">
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                <path d="M4.814 12.5H10.304C11.5168 12.5 12.5 11.5167 12.5 10.304V4.81396M10.382 8.186C10.382 9.39882 9.39883 10.382 8.186 10.382H2.696C1.48318 10.382 0.5 9.39882 0.5 8.186V2.696C0.5 1.48318 1.48318 0.5 2.696 0.5H8.186C9.39883 0.5 10.382 1.48318 10.382 2.696V8.186Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="../Assets/svg/copy.svg" alt="copy-icon">
                         </button>
                         </div>
                         <div class="terminal-body">
@@ -157,14 +113,10 @@
                     <div class="expand-header" onclick="toggleExpand()">
                         <h3 class="step-block-title" language-data="step5-title">Login to your account</h3>
                         <button class="expand-btn" id="expandBtn" aria-label="Expand">
-                            <svg class="expand-chevron" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1.86756 0.000171564C2.35253 0.0067156 2.81496 0.200163 3.15312 0.537958L8.46879 5.77217C8.63712 5.93437 8.77071 6.12734 8.86189 6.33995C8.95306 6.55256 9 6.78061 9 7.01093C9 7.24126 8.95306 7.46931 8.86189 7.68192C8.77071 7.89453 8.63712 8.0875 8.46879 8.2497L3.08129 13.4839C2.91434 13.6474 2.71572 13.7772 2.49688 13.8658C2.27804 13.9544 2.04332 14 1.80625 14C1.56918 14 1.33445 13.9544 1.11561 13.8658C0.896772 13.7772 0.698151 13.6474 0.531205 13.4839C0.362884 13.3217 0.229284 13.1287 0.138112 12.9161C0.0469395 12.7035 0 12.4755 0 12.2451C0 12.0148 0.0469395 11.7868 0.138112 11.5742C0.229284 11.3615 0.362884 11.1686 0.531205 11.0064L4.73346 7.01093L0.531205 3.01549C0.193043 2.67769 0.00684899 2.22322 0.0135847 1.75205C0.0203204 1.28088 0.219434 0.831605 0.567122 0.503065C0.91481 0.174524 1.38259 -0.00637247 1.86756 0.000171564Z"
-                                    fill="white" />
-                            </svg>
+                            <img class="expand-chevron" src="../Assets/svg/expand.svg" alt="expand-icon">
                         </button>
                     </div>
-                    <p class="step-block-desc" language-data="step5-desc">You will be asked to enter your account information, follow the instructions and read labels carefully. If you don't know english well, watch the video guide or use a translator.</p>
+                    <p class="step-block-desc" language-data="step5-desc">You will be asked to enter your account information, follow instructions and read labels carefully. If you don't know english well, watch video guide or use translator.</p>
                     <div class="expand-body" id="expandBody">
                         <div class="expand-inner">
                             <div class="sub-step">
@@ -172,7 +124,7 @@
                                 <div class="sub-step-content">
                                     <p class="sub-step-title" language-data="sub1-title">Get Telegram API Credentials</p>
                                     <ul class="sub-step-list">
-                                    <li language-data="sub1-li1">Go to <a href="https://my.telegram.org" target="_blank" class="step-link">https://my.telegram.org</a> and log in with your Telegram account.</li>
+                                    <li language-data="sub1-li1">Go to <a href="https://my.telegram.org/auth?to=apps" target="_blank" class="step-link">https://my.telegram.org/auth?to=apps</a> and login with your Telegram account.</li>
                                     <li language-data="sub1-li2">Click on <span class="sub-highlight">"API development tools"</span>.</li>
                                     <li language-data="sub1-li3">Create a new application by filling in required details (any name, short description and url will do).</li>
                                     <li language-data="sub1-li4">Copy your <span class="sub-highlight">API ID</span> and <span class="sub-highlight">API hash</span>.</li>
@@ -196,7 +148,7 @@
                                 <ul class="sub-step-list">
                                     <li language-data="sub3-li1">Decide if you want to use a QR code for login - type <code class="inline-code">y</code> for yes, or <code class="inline-code">n</code> for phone number login.</li>
                                     <li language-data="sub3-li2">If you chose phone, enter your number in international format <span class="sub-example">(e.g., +7908 ***)</span>.</li>
-                                    <li language-data="sub3-li3">Once complete, your API config will be saved and the userbot will log in.</li>
+                                    <li language-data="sub3-li3">Once complete, your API config will be saved and the userbot will login.</li>
                                 </ul>
                                 </div>
                             </div>

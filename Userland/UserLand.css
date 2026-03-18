@@ -1,3 +1,4 @@
+/* я не могу определиться */
 @font-face {
     font-family: 'BABAPRO FONT';
     src: url('Assets/fonts/BabaPro-Bold.ttf') format('truetype');
@@ -153,6 +154,7 @@ body {
     position: absolute;
     width: 2vw;
     height: auto;
+    transition: opacity 300ms ease;
 }
 
 .hint-play {
@@ -165,9 +167,10 @@ body {
 
 .is-playing .hint-pause {
     display: block;
+    opacity: 1;
 }
 
-.is-playing .screen-overlay>.hint-icon {
+.video-screen:not(:hover) .hint-pause {
     opacity: 0;
 }
 
@@ -296,6 +299,10 @@ body {
 }
 
 .is-playing .icon--pause {
+    display: block;
+}
+
+.icon--vol {
     display: block;
 }
 
@@ -442,12 +449,6 @@ body {
     opacity: 0.75;
 }
 
-.step-link svg {
-    flex-shrink: 0;
-    width: 0.833vw;
-    height: auto;
-}
-
 .step-block--expandable {
     cursor: default;
 }
@@ -477,7 +478,7 @@ body {
     opacity: 1;
 }
 
-.expand-btn svg {
+.expand-btn img {
     width: var(--icon-chevron-w);
     height: var(--icon-chevron-h);
     flex-shrink: 0;
@@ -581,7 +582,7 @@ body {
     font-size: 0.625vw;
 }
 
-.terminal-bar svg {
+.terminal-bar img {
     width: 0.625vw;
     height: 0.625vw;
     flex-shrink: 0;
@@ -627,7 +628,7 @@ body {
     opacity: 0.7;
 }
 
-.copy-btn svg {
+.copy-btn img {
     width: 0.677vw;
     height: 0.677vw;
 }
@@ -799,7 +800,7 @@ body {
         gap: 5px;
     }
 
-    .step-link svg {
+    .step-link img {
         width: 9px;
     }
 
@@ -807,7 +808,7 @@ body {
         gap: 8px;
     }
 
-    .expand-btn svg {
+    .expand-btn img {
         width: 7px;
         height: 11px;
     }
@@ -859,12 +860,12 @@ body {
         padding: 6px 10px;
     }
 
-    .terminal-bar svg {
+    .terminal-bar img {
         width: 12px;
         height: 12px;
     }
 
-    .copy-btn svg {
+    .copy-btn img {
         width: 13px;
         height: 13px;
     }
